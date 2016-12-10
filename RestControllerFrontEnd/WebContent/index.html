@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body ng-app="myApp">
+<div class="container">
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+		<ul class="nav navbar-nav ">
+			<li><a href="#/listOfPersons">List of Persons</a></li>
+			<li><a href="#/createPerson">Create New Person</a></li>
+<!-- /home [home.html, PersonController] -->
+</ul>
+</div>
+</nav>
+<div ng-view></div>
+<script type="text/javascript" 
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+	<script type="text/javascript" 
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+<script type="text/javascript" src="js/service.js"></script>
+<script type="text/javascript" src="js/editController.js"></script>
+</div>
+</body>
+</html>

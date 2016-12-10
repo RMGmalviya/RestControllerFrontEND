@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+<table class="table table-striped">
+<tr><th>ID</th><th>Name</th><th>Email</th><th>Phoneno</th><th>Dob</th><th>Update</th><th>Delete</th></tr>
+<tr ng-repeat="p in persons">
+<td>{{p.personId}}</td><td>{{p.name}}</td><td>{{p.email}}</td><td>{{p.phoneno}}</td><td>{{p.dob|date:'MM/dd/yyyy'}}</td>
+<td><a href="#/edit/{{p.personId}}">Edit</a></td>
+<td><a href="" ng-click="deletePerson(p.personId)" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-trash"></span></a></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
